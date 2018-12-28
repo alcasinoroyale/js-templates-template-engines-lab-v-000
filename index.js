@@ -5,5 +5,5 @@ function createPost() {
 
   let title = document.getElementById("postTitle").value;
   let author = document.getElementById("postAuthor").value;
-  let post = document.getElementById("post").value;
+  let post = document.getElementById("postBody").value;
 }
