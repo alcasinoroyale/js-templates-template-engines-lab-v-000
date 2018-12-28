@@ -29,6 +29,15 @@
       <div id="post"></div>
     </script>
 
+    <script id="comments-template" type="text/x-lodash-template">
+      <form onsubmit="postComment()" id="comment-form">
+        Name: <input type="text" id="commenterName"> <br>
+        Text: <input type="textarea" id="commenterText"> <br>
+        <input type="submit">
+      </form>
+      <div id="comments"></div>
+    </script>
+
 
     <!-- Open this file and call `mocha.run()` in console to run tests -->
     <div id="mocha"></div>
