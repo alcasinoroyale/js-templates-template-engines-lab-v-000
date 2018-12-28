@@ -4,8 +4,8 @@ function createPost() {
   let commentsTemplate = _.template(document.getElementById('comments-template').innerHTML);
 
   let title = document.getElementById("postTitle").value;
-  let author = document.getElementById("postAuthor").value;
   let body = document.getElementById("postBody").value;
+  let author = document.getElementById("postAuthor").value;
 
   document.getElementsByTagName('main')[0].innerHTML += pageTemplate();
 
