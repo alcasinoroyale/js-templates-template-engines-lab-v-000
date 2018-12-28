@@ -9,12 +9,12 @@ function createPost() {
 
   document.getElementsByID('post-form')[0].innerHTML += pageTemplate();
 
-  let postHTML = postTemplate({ 'title': title, 'body': body, 'author': author });
-  let commentsHTML = commentsTemplate();
-  let postDiv = document.getElementById('post');
+  let blog = postTemplate({ 'title': title, 'body': body, 'author': author });
+  let comments = commentsTemplate();
+  let post = document.getElementById('post');
 
-	postDiv.innerHTML += postHTML;
-	postDiv.getElementsByTagName('footer')[0].innerHTML += commentsHTML;
+	post.innerHTML += blog;
+	post.getElementsByTagName('footer')[0].innerHTML += comments;
 }
 
 function postComment() {
