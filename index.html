@@ -14,6 +14,17 @@
     </main>
     <script src="node_modules/lodash/lodash.min.js"></script>
     <script src="index.js"></script>
+
+    <script id="posts-template" type="text/x-lodash-template">
+      <article>
+      <header class="post-title"><%- title %></header>
+      <p><%- body %></p>
+      <footer><%- author %></footer>
+      <br>
+      </article>
+    </script>
+
+
     <!-- Open this file and call `mocha.run()` in console to run tests -->
     <div id="mocha"></div>
     <script src="node_modules/mocha/mocha.js"></script>
