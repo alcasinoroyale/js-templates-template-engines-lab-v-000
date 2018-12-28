@@ -7,7 +7,7 @@ function createPost() {
   let body = document.getElementById("postBody").value;
   let author = document.getElementById("postAuthor").value;
 
-  document.getElementById('post-form')[0].innerHTML += pageTemplate();
+  document.getElementsByTagName('main')[0].innerHTML += pageTemplate();
 
   let blog = postTemplate({ 'title': title, 'body': body, 'author': author });
   let comments = commentsTemplate();
